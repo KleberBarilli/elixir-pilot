@@ -6,8 +6,9 @@ defmodule Hello do
   end
 
   def handle_file_read({:ok, result}) do
-    list = String.split(result, ",")
-    Enum.map(list, &String.to_integer/1)
+    result
+    |> String.split(",")
+    |> Enum.map(&String.to_integer/1)
   end
 
   def handle_file_read({:error, reason}), do: reason
