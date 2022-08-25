@@ -1,18 +1,6 @@
 defmodule Hello do
-  @moduledoc """
-  Documentation for `Hello`.
-  """
-
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Hello.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  def build(filename) do
+    file = File.read(filename)
+    IO.inspect(file)
   end
 end
