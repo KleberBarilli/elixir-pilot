@@ -1,6 +1,6 @@
 defmodule Hello do
   def build(filename) do
-    file = File.read(filename)
-    IO.inspect(file)
+    {:ok, file} = File.read(filename)
+    file
   end
 end
