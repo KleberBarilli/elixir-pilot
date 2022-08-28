@@ -1,18 +1,7 @@
 defmodule NarutoDuel do
-  @moduledoc """
-  Documentation for `NarutoDuel`.
-  """
+  alias NarutoDuel.Ninja
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> NarutoDuel.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  def create_ninja(name, atk, def, heal) do
+    Ninja.build(name, atk, def, heal)
   end
 end
