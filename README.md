@@ -1,5 +1,7 @@
 # Hello
 
+cd to folder and run mix deps.get
+
 **TODO: Add description**
 
 ## Installation
