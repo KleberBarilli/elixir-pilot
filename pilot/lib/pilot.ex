@@ -1,4 +1,4 @@
-defmodule Hello do
+defmodule Pilot do
   def build(file_name) do
     file_name
     |> File.read()
@@ -22,8 +22,6 @@ defmodule Hello do
     |> evaluate_numbers()
   end
 
-  defp evaluate_numbers(number) when rem(number, 3) == 0 and rem(number, 5) == 0, do: :kb
-  defp evaluate_numbers(number) when rem(number, 3) == 0, do: :k
-  defp evaluate_numbers(number) when rem(number, 5) == 0, do: :b
-  defp evaluate_numbers(number), do: number
+  defp evaluate_numbers(number) when rem(number, 3) == 0 and rem(number, 5) == 0, do: :hello_world
+  defp evaluate_numbers(number) when rem(number, 3) == 0, do: :hello
 end
